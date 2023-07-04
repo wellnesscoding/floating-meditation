@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+* 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 239, 235);
+}
+
+body
+{
+    text-align: center;
+}
+
+.center
+{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.center h1{
+    text-align:center;
+    color:black;
+    font-family: 'Source Code Pro', monospace;
+    text-transform:uppercase;
+  }
+
+#Person{
+    animation: personFloat 2s infinite ease-in-out alternate-reverse;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes personFloat{
+    from{
+        transform: translateY(0px);
+
+    }
+    to{
+        transform: translateY(-60px);
+    }
+}
